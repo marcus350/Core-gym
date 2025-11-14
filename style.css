@@ -360,6 +360,12 @@ footer{
         flex-direction: column;
         gap: 10px;
     }
+    .plan{
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+        font-size: 18px;
+    }
     .clases-incluidas{
         grid-template-columns: 100%;
         grid-template-rows: repeat(1fr,6);
