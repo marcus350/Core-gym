@@ -321,6 +321,24 @@ footer{
 .ase-nutri{
     grid-area: nutricion;
 }
+/*FAQS*/
+.faqs{
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+}
+.accordion-button{
+    font-size: 20px;
+    color: #1c1c1c;
+}
+.accordion-button:hover{
+    background-color: #e0e0e0;
+}
+.accordion-body{
+    font-size: 18px;
+    color: #1c1c1c;
+}
+/* Mobile */
 @media(max-width:576px){
     header{
         gap: 10px;
@@ -371,6 +389,7 @@ footer{
         border:none
     }
 }
+/* Tablets */
 @media (min-width: 769px)and (max-width: 1024px){
     .clases-incluidas{
         grid-template-columns: 1fr 1fr;
@@ -386,6 +405,7 @@ footer{
         font-size: 24px;
     }
 }
+/* Small tablets and large phones */
 @media (min-width:577px) and (max-width: 768px){
     .clases-incluidas{
         grid-template-columns: 1fr;
