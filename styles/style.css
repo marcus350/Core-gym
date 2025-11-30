@@ -1,420 +1,364 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #f5f5f5;
-    font-family: "Poppins", sans-serif;
-}
-p{
-    font-size: 18px;
-    color: #1c1c1c;
-}
-header{
-    font-size: 24px;
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-    padding: 10px 20px;
-}
-.logo{
-    width: 169.2px;
-    height: auto;
-}
-.main-header{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.main-header p.slogan{
-    font-size: 22px;
-    font-style: italic;
-    color: #1c1c1c;
-}
-.welcome-text{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 20px;
-}
-.welcome-text p{
-    font-size: 24px;
-    max-width: 600px;
-    text-align: left;
-}
-.gym{
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-li{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px 5px;
-    margin: 0 10px;
+body {
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
 }
-nav ul{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px 5px;
-    padding: 0;
-    gap: 15px 5px;
+body p {
+  font-size: 18px;
+  color: #1c1c1c;
 }
-.boton{
-    padding: 10px 15px;
-    width: auto;
-    background-color: #00adb5;
-    color: #1c1c1c;
-    font-size: 24px;
-    border-radius: 5px;
-    text-decoration: none;
+body h1 {
+  font-size: 48px;
+  color: #00adb5;
 }
-.home-links nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 20px 0;
+body h2 {
+  font-size: 36px;
+  color: #00adb5;
 }
-.home-links nav a{
-    padding: 10px 15px;
-
-}
-.boton:hover{
-    background-color: #008f95;
-    color: #f5f5f5;
-    text-decoration: underline;
-}
-h1, h2, h3{
-    color: #00adb5;
-}
-h1{
-    font-size: 48px;
-}
-h2{
-    font-size: 36px;
-}
-h3{
-    font-size: 24px;
-}
-.formulario-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px;
-    padding-right: 50px;
-    margin: 20px auto;
-    max-width: 600px;
-    border: 2px solid #00adb5;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-}
-.email, .mensaje{
-    font-size: 18px;
-    color: #1c1c1c;
-    font-family: "Poppins", sans-serif;
-    background-color:#e0e0e0 ;
-    margin: 15px 15px 0 15px;
-    padding: 10px;
-    border: none;
-}
-.form-label{
-    font-size: 20px;
-    color: #1c1c1c;
-    margin: 0 0 0 15px;
-}
-.boton-enviar{
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 15px;
-    background-color: #00adb5;
-    color: #1c1c1c;
-    font-size: 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-}
-.boton-enviar:hover{
-    background-color: #008f95;
-    color: #f5f5f5;
-    text-decoration: underline;
-}
-.otros-contactos{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 600px;
-    margin: 0 auto 40px auto;
-    padding: 20px;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #1c1c1c;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-.footer-img{
-    width: 50px;
-    height: 50px;
-    margin:0 10px;
+body h3 {
+  font-size: 24px;
+  color: #00adb5;
 }
 
-.membresias{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px;
+header {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
 }
-.plan{
-    border: 2px solid #00adb5;
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    height: 320px;
-    text-align: center;
-    margin: 50px;
+header .logo {
+  width: 169.2px;
+  height: auto;
 }
-.plan h3{
-    border: 2px solid #00adb5;
-    margin-bottom: 10px;
-    background-color: #00adb5;
-    color: #f5f5f5;
+header nav ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 5px;
+  margin: 0 10px;
 }
-.boton-plan{
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #00adb5;
-    color: #1c1c1c;
-    font-size: 18px;
-    border-radius: 5px;
-    text-decoration: none;
+header nav ul li .boton {
+  background-color: #00adb5;
+  color: #1c1c1c;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
 }
-.boton-plan:hover{
-    background-color: #008f95;
-    color: #f5f5f5;
-    text-decoration: underline;
+header nav ul li .boton:hover {
+  cursor: pointer;
+  background-color: #008f95;
+  color: #f5f5f5;
+  text-decoration: underline;
 }
-.subtitulo-clases{
-    text-align: center;
-    padding: 0 20px 20px 20px;
+header nav ul li .boton {
+  width: auto;
+  font-size: 24px;
 }
-.clases-incluidas{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 350px 350px;
-    grid-template-areas:
-        "yoga pilates spinning"
-        "EF zumba boxeo";
-    justify-items: center;
-    gap: 5px;
-}
-.yoga{
-    grid-area: yoga;
-}
-.pilates{
-    grid-area: pilates;
-}
-.spinning{
-    grid-area: spinning;
-}
-.EF{
-    grid-area: EF;
-}
-.zumba{
-    grid-area: zumba;
-}
-.boxeo{
-    grid-area: boxeo;
-}
-.clase-contenido{
-    border: 2px solid #00adb5;
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    height: 350px;
-    text-align: center;
-    margin: 20px;
-}
-.clase-contenido p{
-    margin-top: 10px;
-    font-size: 15px;
-}
-.clase-img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.clase-contenido h3{
-    border: 2px solid #00adb5;
-    margin-bottom: 10px;
-    background-color: #00adb5;
-    color: #f5f5f5;
-    border-radius: 5px;
-}
-.servicios{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "entrenamiento libregym"
-        "masaje nutricion";
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
-.servicio-gym{
-    border: 2px solid #00adb5;
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    height: 350px;
-    text-align: left;
-    margin: 20px;
+footer .footer-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
 }
-.servicio-gym img{
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
+
+.membresias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
 }
-.ent-per{
-    grid-area: entrenamiento;
+
+.plan {
+  border: 2px solid #00adb5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  height: 320px;
+  text-align: center;
+  margin: 50px;
 }
-.free-gym{
-    grid-area: libregym;
+.plan h3 {
+  border: 2px solid #00adb5;
+  margin-bottom: 10px;
+  background-color: #00adb5;
+  color: #f5f5f5;
 }
-.masaje{
-    grid-area: masaje;
+.plan .boton-plan {
+  display: inline-block;
+  background-color: #00adb5;
+  color: #1c1c1c;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
 }
-.ase-nutri{
-    grid-area: nutricion;
+.plan .boton-plan:hover {
+  cursor: pointer;
+  background-color: #008f95;
+  color: #f5f5f5;
+  text-decoration: underline;
 }
-/*FAQS*/
-.faqs{
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    padding: 20px;
+
+.subtitulo-clases {
+  text-align: center;
+  padding: 0 20px 20px 20px;
 }
-.accordion-button{
-    font-size: 20px;
-    color: #1c1c1c;
+
+.clases-incluidas {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 350px 350px;
+  gap: 5px;
+  padding: 20px;
+  grid-template-areas: "yoga pilates spinning" "EF zumba boxeo";
+  justify-items: center;
 }
-.accordion-button:hover{
-    background-color: #e0e0e0;
+.clases-incluidas .yoga {
+  grid-area: yoga;
 }
-.accordion-body{
-    font-size: 18px;
-    color: #1c1c1c;
+.clases-incluidas .pilates {
+  grid-area: pilates;
 }
+.clases-incluidas .spinning {
+  grid-area: spinning;
+}
+.clases-incluidas .EF {
+  grid-area: EF;
+}
+.clases-incluidas .zumba {
+  grid-area: zumba;
+}
+.clases-incluidas .boxeo {
+  grid-area: boxeo;
+}
+.clases-incluidas .clase-contenido {
+  border: 2px solid #00adb5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  margin: 20px;
+}
+.clases-incluidas .clase-contenido p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.clases-incluidas .clase-contenido h3 {
+  border: 2px solid #00adb5;
+  margin-bottom: 10px;
+  background-color: #00adb5;
+  color: #f5f5f5;
+  border-radius: 5px;
+}
+.clases-incluidas .clase-contenido .clase-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: auto;
+  padding: 20px;
+  padding-right: 50px;
+  margin: 20px auto;
+  max-width: 600px;
+  border: 2px solid #00adb5;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.formulario-contacto .email, .formulario-contacto .mensaje {
+  font-size: 18px;
+  color: #1c1c1c;
+  font-family: "Poppins", sans-serif;
+  background-color: #e0e0e0;
+  margin: 15px 15px 0 15px;
+  padding: 10px;
+  border: none;
+}
+.formulario-contacto .form-label {
+  font-size: 20px;
+  color: #1c1c1c;
+  margin: 0 0 0 15px;
+}
+.formulario-contacto .boton-enviar {
+  margin: 15px;
+}
+
+.otros-contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: auto;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+}
+
+.faqs {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+}
+
+.accordion-button {
+  font-size: 20px;
+  color: #1c1c1c;
+}
+.accordion-button:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-body {
+  font-size: 18px;
+  color: #1c1c1c;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  display: grid;
+  grid-template-areas: "entrenamiento libregym" "masaje nutricion";
+  padding: 20px;
+  justify-items: center;
+}
+
+.servicio-gym {
+  border: 2px solid #00adb5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  height: 350px;
+  text-align: left;
+  margin: 20px;
+}
+.servicio-gym img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.servicio-gym .ent-per {
+  grid-area: entrenamiento;
+}
+.servicio-gym .free-gym {
+  grid-area: libregym;
+}
+.servicio-gym .masaje {
+  grid-area: masaje;
+}
+.servicio-gym .ase-nutri {
+  grid-area: nutricion;
+}
+
 /* Mobile */
-@media(max-width:576px){
-    header{
-        gap: 10px;
-    }
-    .logo{
-        width: 150px;
-    }
-    .welcome-text{
-        flex-direction: column;
-    }
-    .gym{
-        width: 100%;
-    }
-    nav ul{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .home-links nav{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .plan{
-        width: 90%;
-        height: auto;
-        margin: 20px 0;
-        font-size: 18px;
-    }
-    .clases-incluidas{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(1fr,6);
-        grid-template-areas:
-            "yoga"
-            "pilates"
-            "spinning"
-            "EF"
-            "zumba"
-            "boxeo";
-        gap: 20px;
-    }
-    .clase-contenido{
-        width: 100%;
-        height: auto;
-    }
-    .servicios{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(1fr,4);
-        grid-template-areas:
-            "entrenamiento"
-            "libregym"
-            "masaje"
-            "nutricion";
-    }
-    .formulario-contacto{
-        border:none
-    }
+@media (max-width: 576px) {
+  header {
+    gap: 10px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .welcome-text {
+    flex-direction: column;
+  }
+  /* index*/
+  .gym {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home-links nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Clases*/
+  .plan {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  .clases-incluidas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1fr, 6);
+    gap: auto;
+    grid-template-areas: "yoga" "pilates" "spinning" "EF" "zumba" "boxeo";
+    gap: 20px;
+  }
+  .clase-contenido {
+    width: 100%;
+    height: auto;
+  }
+  /*Servicios*/
+  .servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1fr, 4);
+    gap: auto;
+    grid-template-areas: "entrenamiento" "libregym" "masaje" "nutricion";
+  }
+  /*Contacto*/
+  .formulario-contacto {
+    border: none;
+  }
 }
 /* Tablets */
-@media (min-width: 769px)and (max-width: 1024px){
-    .clases-incluidas{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "yoga pilates"
-            "spinning EF"
-            "zumba boxeo";
-        gap: 15px;
-        font-size: 24px;
-    }
-    .clase-contenido{
-        font-size: 24px;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .clases-incluidas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "yoga pilates" "spinning EF" "zumba boxeo";
+    gap: 15px;
+    font-size: 24px;
+  }
+  .clase-contenido {
+    font-size: 24px;
+  }
 }
 /* Small tablets and large phones */
-@media (min-width:577px) and (max-width: 768px){
-    .clases-incluidas{
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+@media (min-width: 577px) and (max-width: 768px) {
+  .clases-incluidas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

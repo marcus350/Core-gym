@@ -1,0 +1,87 @@
+@use "../utilities/mixins" as *;
+@use "./variables" as *;
+
+.membresias{
+    @include flex(row,center,center,wrap);
+    gap: 15px;
+    padding: 20px;
+}
+.plan{
+    border: 2px solid $color-secundario;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 320px;
+    text-align: center;
+    margin: 50px;
+    h3{
+    border: 2px solid $color-secundario;
+    margin-bottom: 10px;
+    background-color: $color-secundario;
+    color: $color-fondo;
+    }
+    .boton-plan{
+        display: inline-block;
+        @include boton($color-secundario,$color-texto,$tamanio-texto,10px 15px,5px);
+    }
+}
+
+.subtitulo-clases{
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+.clases-incluidas{
+    @include grid(2fr 2fr 2fr,350px 350px,5px);
+    padding: 20px;
+    grid-template-areas:
+        "yoga pilates spinning"
+        "EF zumba boxeo";
+    justify-items: center;
+    .yoga{
+        grid-area: yoga;
+    }
+    .pilates{
+        grid-area: pilates;
+    }
+    .spinning{
+        grid-area: spinning;
+    }
+    .EF{
+        grid-area: EF;
+    }
+    .zumba{
+        grid-area: zumba;
+    }
+    .boxeo{
+        grid-area: boxeo;
+    }
+    .clase-contenido{
+        border: 2px solid $color-secundario;
+        border-radius: 10px;
+        padding: 15px;
+        width: 300px;
+        height: 350px;
+        text-align: center;
+        margin: 20px;
+        p{
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        h3{
+            border: 2px solid $color-secundario;
+            margin-bottom: 10px;
+            background-color: $color-secundario;
+            color: $color-fondo;
+            border-radius: 5px;
+        }
+        .clase-img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+

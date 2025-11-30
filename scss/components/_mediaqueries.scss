@@ -1,0 +1,87 @@
+@use "./variables" as *;
+@use "../utilities/mixins" as *;
+
+/* Mobile */
+@media(max-width:576px){
+    header{
+        gap: 10px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .welcome-text{
+        flex-direction: column;
+    }
+    /* index*/
+    .gym{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-links{
+        nav{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    /* Clases*/
+    .plan{
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+        font-size: $tamanio-texto;
+    }
+    .clases-incluidas{
+        @include grid(100%,repeat(1fr,6),auto);
+        grid-template-areas:
+            "yoga"
+            "pilates"
+            "spinning"
+            "EF"
+            "zumba"
+            "boxeo";
+        gap: 20px;
+    }
+    .clase-contenido{
+        width: 100%;
+        height: auto;
+    }
+    /*Servicios*/
+    .servicios{
+        @include grid(100%,repeat(1fr,4),auto);
+        grid-template-areas:
+            "entrenamiento"
+            "libregym"
+            "masaje"
+            "nutricion";
+    }
+    /*Contacto*/
+    .formulario-contacto{
+        border:none
+    }
+}
+/* Tablets */
+@media (min-width: 769px)and (max-width: 1024px){
+    .clases-incluidas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "yoga pilates"
+            "spinning EF"
+            "zumba boxeo";
+        gap: 15px;
+        font-size: 24px;
+    }
+    .clase-contenido{
+        font-size: 24px;
+    }
+}
+/* Small tablets and large phones */
+@media (min-width:577px) and (max-width: 768px){
+    .clases-incluidas{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
