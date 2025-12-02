@@ -4,13 +4,24 @@
 /* Mobile */
 @media(max-width:576px){
     header{
-        gap: 10px;
-    }
-    .logo{
-        width: 150px;
-    }
-    .welcome-text{
-        flex-direction: column;
+        .collapse{
+            position:absolute;
+            top: 100%;     
+            left: 0;
+            width: 0;
+            background-color: white;
+            z-index: 9999;
+        }
+        .logo{
+            width: 100px;
+        }
+        .introduccion{
+            @include flex(column,center,center,wrap);
+            .welcome-text{
+                @include flex(column,center,center,wrap);
+                max-width:100%;
+            }
+        }
     }
     /* index*/
     .gym{
@@ -64,6 +75,17 @@
 }
 /* Tablets */
 @media (min-width: 769px)and (max-width: 1024px){
+    .collapse{
+            position:absolute;
+            top: 100%;     
+            left: 0;
+            width: 0;
+            background-color: white;
+            z-index: 9999;
+        }
+    .introduccion{
+        @include flex(column,center,center,wrap);
+    }
     .clases-incluidas{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
