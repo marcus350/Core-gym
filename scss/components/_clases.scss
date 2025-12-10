@@ -1,13 +1,13 @@
-@use "../utilities/mixins" as *;
-@use "./variables" as *;
+@use "../utilities/mixins" ;
+@use "../utilities/variables" ;
 
 .membresias{
-    @include flex(row,center,center,wrap);
+    @include mixins.flex(row,center,center,wrap);
     gap: 15px;
     padding: 20px;
 }
 .plan{
-    border: 2px solid $color-secundario;
+    border: 2px solid variables.$color-secundario;
     border-radius: 10px;
     padding: 15px;
     width: 300px;
@@ -20,14 +20,14 @@
         }
     }
     h3{
-    border: 2px solid $color-secundario;
+    border: 2px solid variables.$color-secundario;
     margin-bottom: 10px;
-    background-color: $color-secundario;
-    color: $color-fondo;
+    background-color: variables.$color-secundario;
+    color: variables.$color-fondo;
     }
     .boton-plan{
         display: inline-block;
-        @include boton($color-secundario,$color-texto,$tamanio-texto,10px 15px,5px);
+        @include mixins.boton(variables.$color-secundario,variables.$color-texto,variables.$tamanio-texto,10px 15px,5px);
     }
 }
 
@@ -36,7 +36,7 @@
     padding: 0 20px 20px 20px;
 }
 .clases-incluidas{
-    @include grid(2fr 2fr 2fr,350px 350px,5px);
+    @include mixins.grid(2fr 2fr 2fr,350px 350px,5px);
     padding: 20px;
     grid-template-areas:
         "yoga pilates spinning"
@@ -61,7 +61,7 @@
         grid-area: boxeo;
     }
     .clase-contenido{
-        border: 2px solid $color-secundario;
+        border: 2px solid variables.$color-secundario;
         border-radius: 10px;
         padding: 15px;
         width: 300px;
@@ -73,10 +73,10 @@
             font-size: 15px;
         }
         h3{
-            border: 2px solid $color-secundario;
+            border: 2px solid variables.$color-secundario;
             margin-bottom: 10px;
-            background-color: $color-secundario;
-            color: $color-fondo;
+            background-color: variables.$color-secundario;
+            color: variables.$color-fondo;
             border-radius: 5px;
         }
         .clase-img{
@@ -87,6 +87,3 @@
         }
     }
 }
-
-
-

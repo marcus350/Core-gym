@@ -1,8 +1,8 @@
-@use "../utilities/mixins" as *;
-@use "./variables" as *;
+@use "../utilities/mixins";
+@use "../utilities/variables" ;
 header{
     font-size: 24px;
-    @include flex(row, space-between, center,auto);
+    @include mixins.flex(row, space-between, center,auto);
     padding: 10px 20px;
     .logo{
     width: 169.2px;
@@ -13,11 +13,11 @@ header{
         ul{
             li{
                 list-style-type: none;
-                @include flex(row, center, center,wrap);
+                @include mixins.flex(row, center, center,wrap);
                 gap: 10px 5px;
                 margin: 0 10px;
                 .boton{
-                    @include boton($color-secundario, $color-texto, 16px, 10px 15px, 5px);
+                    @include mixins.boton(variables.$color-secundario, variables.$color-texto, 16px, 10px 15px, 5px);
                     width: auto;
                     font-size: 24px;
                 }
@@ -29,9 +29,9 @@ header{
     text-align: center;
 }
 .introduccion{
-    @include flex(column,center,center,auto);
+    @include mixins.flex(column,center,center,auto);
     .welcome-text{
-        @include flex(row,center,center,wrap);
+        @include mixins.flex(row,center,center,wrap);
         max-width: 850px;
         text-align: center; 
         gap: 20px; 
@@ -45,9 +45,9 @@ header{
     }
     .home-links{
         nav{
-            @include flex(row,center,center,wrap);
+            @include mixins.flex(row,center,center,wrap);
             .boton{
-                @include boton($color-secundario,$color-texto,$tamanio-texto,5px,5px);
+                @include mixins.boton(variables.$color-secundario,variables.$color-texto,variables.$tamanio-texto,5px,5px);
                 margin:10px;
             }
         }
@@ -55,7 +55,7 @@ header{
 }
 
 footer{
-    @include flex(row, center, center,auto);
+    @include mixins.flex(row, center, center,auto);
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;

@@ -1,18 +1,18 @@
-@use "../utilities/mixins" as *;
-@use "./variables" as *;
+@use "../utilities/mixins";
+@use "../utilities/variables" ;
 
 .formulario-contacto{
-    @include flex(column,flex-start,flex-start,auto);
+    @include mixins.flex(column,flex-start,flex-start,auto);
     padding: 20px;
     padding-right: 50px;
     margin: 20px auto;
     max-width: 600px;
-    border: 2px solid $color-secundario;
+    border: 2px solid variables.$color-secundario;
     border-radius: 10px;
-    background-color: $color-fondo;
+    background-color: variables.$color-fondo;
     .email, .mensaje{
-        font-size: $tamanio-texto;
-        color: $color-texto;
+        font-size: variables.$tamanio-texto;
+        color: variables.$color-texto;
         font-family: "Poppins", sans-serif;
         background-color:#e0e0e0 ;
         margin: 15px 15px 0 15px;
@@ -21,16 +21,16 @@
     }
     .form-label{
         font-size: 20px;
-        color: $color-texto;
+        color: variables.$color-texto;
         margin: 0 0 0 15px;
     }
     .boton-enviar{
         margin: 15px;
-        @include boton($color-secundario,$color-texto,$tamanio-texto,5px,5px);
+        @include mixins.boton(variables.$color-secundario,variables.$color-texto,variables.$tamanio-texto,5px,5px);
     }
 }
 .otros-contactos{
-    @include flex (column,flex-start,flex-start,auto);
+    @include mixins.flex (column,flex-start,flex-start,auto);
     max-width: 600px;
     margin: 0 auto 40px auto;
     padding: 20px;

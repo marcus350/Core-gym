@@ -358,13 +358,22 @@ footer .footer-img {
 
 /* Mobile */
 @media (max-width: 576px) {
-  header .collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    background-color: white;
-    z-index: 9999;
+  body {
+    padding: 20px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: auto;
+  }
+  header .navbar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    justify-self: flex-end;
   }
   header .logo {
     width: 100px;

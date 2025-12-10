@@ -1,25 +1,28 @@
-@use "./variables" as *;
-@use "../utilities/mixins" as *;
+@use "../utilities/variables";
+@use "../utilities/mixins";
 
 /* Mobile */
 @media(max-width:576px){
+    body{
+        padding: 20px;
+    }
     header{
-        .collapse{
-            position:absolute;
-            top: 100%;     
-            left: 0;
-            width: 0;
-            background-color: white;
-            z-index: 9999;
+        @include mixins.flex(row,flex-end,center,auto);
+        .navbar {
+            position: relative;
+            top: 0;
+            width: 100%;
+            z-index: 1050;
+            justify-self: flex-end;
         }
+        
         .logo{
             width: 100px;
         }
-        .introduccion{
-            @include flex(column,center,center,wrap);
-            .welcome-text{
-                @include flex(column,center,center,wrap);
-                max-width:100%;
+    .introduccion{
+        @include mixins.flex(column,center,center,wrap);
+        .welcome-text{
+            @include mixins.flex(column,center,center,wrap);                max-width:100%;
             }
         }
     }
@@ -42,10 +45,10 @@
         width: 90%;
         height: auto;
         margin: 20px 0;
-        font-size: $tamanio-texto;
+        font-size: variables.$tamanio-texto;
     }
     .clases-incluidas{
-        @include grid(100%,repeat(1fr,6),auto);
+        @include mixins.grid(100%,repeat(1fr,6),auto);
         grid-template-areas:
             "yoga"
             "pilates"
@@ -61,7 +64,7 @@
     }
     /*Servicios*/
     .servicios{
-        @include grid(100%,repeat(1fr,4),auto);
+        @include mixins.grid(100%,repeat(1fr,4),auto);
         grid-template-areas:
             "entrenamiento"
             "libregym"
@@ -84,7 +87,7 @@
             z-index: 9999;
         }
     .introduccion{
-        @include flex(column,center,center,wrap);
+        @include mixins.flex(column,center,center,wrap);
     }
     .clases-incluidas{
         grid-template-columns: 1fr 1fr;

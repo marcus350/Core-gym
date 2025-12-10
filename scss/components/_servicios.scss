@@ -1,8 +1,8 @@
-@use "../utilities/mixins" as *;
-@use "./variables" as *;
+@use "../utilities/mixins" ;
+@use "../utilities/variables" ;
 
 .servicios{
-    @include grid(1fr 1fr,auto,20px);
+    @include mixins.grid(1fr 1fr,auto,20px);
     display:grid;
     grid-template-areas:
         "entrenamiento libregym"
@@ -12,7 +12,7 @@
 
 }
 .servicio-gym{
-    border: 2px solid $color-secundario;
+    border: 2px solid variables.$color-secundario;
     border-radius: 10px;
     padding: 15px;
     width: 300px;

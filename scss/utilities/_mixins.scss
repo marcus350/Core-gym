@@ -1,4 +1,4 @@
-@use "../components/variables" as *;
+@use "./variables" ;
 
 @mixin titulo($tamanio,$color){
     font-size: $tamanio;
@@ -29,8 +29,8 @@
     text-decoration: none;
     &:hover{
         cursor: pointer;
-        background-color: $color-hover;
-        color: $color-fondo;
+        background-color: variables.$color-hover;
+        color: variables.$color-fondo;
         text-decoration: underline;
     }
 }

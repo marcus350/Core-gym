@@ -1,21 +1,21 @@
-@use "../utilities/mixins" as *;
-@use "../components/variables" as *;
+@use "../utilities/mixins";
+@use "../utilities/variables" ;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: $color-fondo;
-    font-family: $fuente-principal;
+    background-color: variables.$color-fondo;
+    font-family: variables.$fuente-principal;
     p{
-        font-size: $tamanio-texto;
-        color: $color-texto;
+        font-size: variables.$tamanio-texto;
+        color: variables.$color-texto;
     }
     h1{
-        @include titulo($tamanio-titulo,$color-secundario);
+        @include mixins.titulo(variables.$tamanio-titulo,variables.$color-secundario);
     }
     h2{
-        @include titulo($tamanio-subtitulo,$color-secundario);
+        @include mixins.titulo(variables.$tamanio-subtitulo,variables.$color-secundario);
     }
     h3{
-        @include titulo($taminio-apartado,$color-secundario);
+        @include mixins.titulo(variables.$taminio-apartado,variables.$color-secundario);
     }
 }

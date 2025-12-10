@@ -1,5 +1,5 @@
-@use "../utilities/mixins" as *;
-@use "./variables" as *;
+@use "../utilities/mixins";
+@use "../utilities/variables" ;
 
 .faqs{
     max-width: 800px;
@@ -8,12 +8,12 @@
 }
 .accordion-button{
     font-size: 20px;
-    color: $color-texto;
+    color: variables.$color-texto;
     &:hover{
         background-color: #e0e0e0;
     }
 }
 .accordion-body{
-    font-size: $tamanio-texto;
-    color: $color-texto;
+    font-size: variables.$tamanio-texto;
+    color: variables.$color-texto;
 }
