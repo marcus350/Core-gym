@@ -2,7 +2,7 @@
 @use "../utilities/variables" ;
 header{
     font-size: 24px;
-    @include mixins.flex(row, space-between, center,auto);
+    @include mixins.flex(row, center, center,auto);
     padding: 10px 20px;
     .logo{
     width: 169.2px;

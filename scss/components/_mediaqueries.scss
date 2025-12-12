@@ -7,25 +7,59 @@
         padding: 20px;
     }
     header{
-        @include mixins.flex(row,flex-end,center,auto);
+        @include mixins.flex(row,center,center,auto);
         .navbar {
+            width:100%;
             position: relative;
-            top: 0;
-            width: 100%;
-            z-index: 1050;
-            justify-self: flex-end;
+            background: transparent;
+            padding: 0.4rem 1rem;
         }
-        
-        .logo{
-            width: 100px;
+
+        .container-fluid {
+            max-width: 100%;
+            @include mixins.flex(row,space-evenly,center,auto);
         }
+
+        .navbar-toggler {
+            margin-left: auto;
+        }
+
+        .navbar-collapse {
+            position: absolute;
+            top: calc(56px + 70px); 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            background-color: variables.$color-fondo;
+            border-radius: 8px;
+            padding: 0.6rem;
+            z-index: 1000;
+            box-shadow: 0 8px 24px variables.$color-secundario;
+        }
+
+        .navbar-collapse.collapse:not(.show) {
+            display: none;
+        }
+
+        .navbar-nav {
+            @include mixins.flex(column,center,center,auto);
+            gap: 0.5rem;
+            margin:10px;
+        }
+
+        .logo {
+            width: 100px;      
+            height: auto;     
+            max-width: none;   
+        }
+    }
     .introduccion{
         @include mixins.flex(column,center,center,wrap);
         .welcome-text{
             @include mixins.flex(column,center,center,wrap);                max-width:100%;
             }
         }
-    }
+
     /* index*/
     .gym{
         width: 100%;
