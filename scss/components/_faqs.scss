@@ -1,5 +1,6 @@
 @use "../utilities/mixins";
 @use "../utilities/variables" ;
+@use "../utilities/extends";
 
 .faqs{
     max-width: 800px;
@@ -16,4 +17,28 @@
 .accordion-body{
     font-size: variables.$tamanio-texto;
     color: variables.$color-texto;
+}
+.faqs-intro{
+    @include mixins.flex(column,center,center,auto);
+    .faqs-intro-text{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .faqs-img{
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+.faqs-contacto{
+    @include mixins.flex(column,center,center,auto);
+    margin-top: 30px;
+    .icono-contacto{
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .boton{
+        @extend %boton;
+    }
 }

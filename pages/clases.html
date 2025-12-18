@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Core Gym - clases</title>
+    <title>Core Gym | Clases</title>
+    <meta name="keyword" content="Clases, fitness, yoga, pilates, spinning, entrenamiento funcional, zumba, boxeo, horarios, membresías">
+    <meta name="description" content="Descubre las clases incluidas con tu membresía en Core Gym. Desde yoga hasta boxeo, tenemos opciones para todos los gustos y niveles."> 
+    <meta name="author" content="Marcos Ariel Argüello">
+    <link rel="icon" href="../assets/Logo_Core_Gym.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -31,7 +36,7 @@
                         <li class="nav-item">
                         <a class="nav-link boton" href="./contacto.html">Contacto</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                         <a class="nav-link boton" href="./faqs.html">FAQS</a>
                         </li>
                     </ul>
@@ -40,7 +45,7 @@
         </nav>
     </header>
     <main>
-        <div class="main-header">
+        <div class="main-header" data-aos="fade-right">
             <h1><strong>CORE GYM</strong></h1>
             <p class="slogan">"Fuerza. Enfoque. Resultados"</p>
             <h2>Nuestras Membresías</h2>
@@ -48,33 +53,33 @@
         </div>
         <!-- SECCIÓN MEMBRESÍAS -->
         <section class="membresias">
-            <div class="plan">
+            <div class="plan" data-aos="zoom-in">
                 <h3>Mensual</h3>
                 <p>$20.000 / mes</p>
-                <ul>
-                    <li>Acceso ilimitado al gimnasio</li>
-                    <li>Hasta 4 clases grupales por semana</li>
-                    <li>Asesoramiento inicial</li>
+                <ul class="lista-plan">
+                    <li class="item-plan">Acceso ilimitado al gimnasio</li>
+                    <li class="item-plan">Hasta 4 clases grupales por semana</li>
+                    <li class="item-plan">Asesoramiento inicial</li>
                 </ul>
                 <a class="boton-plan" href="#">Elegir plan</a>
             </div>
-            <div class="plan">
+            <div class="plan" data-aos="zoom-in">
                 <h3>Trimestral</h3>
                 <p>$55.000 / 3 meses</p>
-                <ul>
-                    <li>Acceso ilimitado al gimnasio</li>
-                    <li>Hasta 5 clases grupales por semana</li>
-                    <li>Asesoramiento + seguimiento mensual</li>
+                <ul class="lista-plan">
+                    <li class="item-plan">Acceso ilimitado al gimnasio</li>
+                    <li class="item-plan">Hasta 5 clases grupales por semana</li>
+                    <li class="item-plan">Asesoramiento + seguimiento mensual</li>
                 </ul>
                 <a class="boton-plan" href="#">Elegir plan</a>
             </div>
-            <div class="plan">
+            <div class="plan" data-aos="zoom-in">
                 <h3>Anual</h3>
                 <p>$200.000 / año</p>
-                <ul>
-                    <li>Acceso ilimitado al gimnasio</li>
-                    <li>Clases grupales ilimitadas</li>
-                    <li>Evaluación física personalizada</li>
+                <ul class="lista-plan">
+                    <li class="item-plan">Acceso ilimitado al gimnasio</li>
+                    <li class="item-plan">Clases grupales ilimitadas</li>
+                    <li class="item-plan">Evaluación física personalizada</li>
                 </ul>
                 <a class="boton-plan" href="#">Elegir plan</a>
             </div>
@@ -85,44 +90,48 @@
             <p>Con tu membresía, podés participar en cualquiera de nuestras clases. ¡Explorá nuestras opciones!</p>
         </div>
         <section class="clases-incluidas">
-            <div class="clase-contenido yoga">
+            <div class="clase-contenido yoga" data-aos="flip-left">
                 <h3>Yoga</h3>
                 <p>Mejorá tu flexibilidad, fuerza y equilibrio.
                 Horarios: Lunes y Miércoles: 7:00 - 8:00 AM</p>
-                <img class="clase-img" src="../assets/yoga.jpg" alt="Yoga">
+                <img class="clase-img" src="../assets/yoga.jpg" alt="Un grupo de personas estirando y relajándose en una clase de yoga">
             </div>
-            <div class="clase-contenido pilates">
+            <div class="clase-contenido pilates" data-aos="flip-left">
                 <h3>Pilates</h3>
                 <p>Fortalece tu núcleo y mejora tu postura. Horarios: Lunes y Miércoles: 8:30 - 9:30 AM</p>
-                <img class="clase-img" src="../assets/pilates.jpg"alt="Pilates">
+                <img class="clase-img" src="../assets/pilates.jpg"alt="Personas entrenando en camillas en la clase de pilates">
             </div>
-            <div class="clase-contenido spinning">
+            <div class="clase-contenido spinning" data-aos="flip-left">
                 <h3>Spinning</h3>
                 <p>Mejorá tu resistencia cardiovascular. Horarios: Lunes, Miércoles y Viernes: 6:00 - 7:00 AM<p>
-                <img class="clase-img" src="../assets/spinning.jpg"alt="Spinning">
+                <img class="clase-img" src="../assets/spinning.jpg"alt="Grupo de personas montadas en bicicletas fijas en una clase de spinning">
             </div>
-            <div class="clase-contenido EF">
+            <div class="clase-contenido EF" data-aos="flip-left">
                 <h3>Entrenamiento Funcional</h3>
                 <p>Desarrolla fuerza, agilidad y coordinación. Horarios: Martes y Jueves: 7:00 - 8:00 AM</p>
-                <img class="clase-img" src="../assets/entrenamiento_funcional.jpg" alt="Entrenamiento Funcional">
+                <img class="clase-img" src="../assets/entrenamiento_funcional.jpg" alt="Un grupo de alumnos realizando diferentes ejercicios en circuito">
             </div>
-            <div class="clase-contenido zumba">
+            <div class="clase-contenido zumba" data-aos="flip-left">
                 <h3>Zumba</h3>
                 <p>Divertite al ritmo de la música latina. 
                 Horarios: Lunes y Miércoles: 7:30 - 8:30 PM</p>
-                <img class="clase-img" src="../assets/zumba.jpg" alt="Zumba">
+                <img class="clase-img" src="../assets/zumba.jpg" alt="grupo de mujeres bailando y divirtiéndose en una clase de zumba">
             </div>
-            <div class="clase-contenido boxeo">
+            <div class="clase-contenido boxeo" data-aos="flip-left">
                 <h3>Boxeo</h3>
                 <p>Mejorá tu condición física y aprendé defensa personal. Horarios: Martes y Jueves: 8:00 - 9:00 PM</p>
-                <img class="clase-img" src="../assets/boxeo.jpg" alt="Boxeo">
+                <img class="clase-img" src="../assets/boxeo.jpg" alt="Dos hombres practicando defensa y ataque en una clase de boxeo">
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Core Gym. Todos los derechos reservados.</p>
-        <img class="footer-img" src="../assets/Logo_Core_Gym.svg" alt="">
+        <img class="footer-img" src="../assets/Logo_Core_Gym.svg" alt="Logo Core Gym">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

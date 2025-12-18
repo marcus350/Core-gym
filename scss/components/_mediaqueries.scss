@@ -3,9 +3,6 @@
 
 /* Mobile */
 @media(max-width:576px){
-    body{
-        padding: 20px;
-    }
     header{
         @include mixins.flex(row,center,center,auto);
         .navbar {
@@ -26,10 +23,10 @@
 
         .navbar-collapse {
             position: absolute;
-            top: calc(56px + 70px); 
+            top: 126px; 
             left: 50%;
             transform: translateX(-50%);
-            width: 50%;
+            width: 200px;
             background-color: variables.$color-fondo;
             border-radius: 8px;
             padding: 0.6rem;
@@ -65,7 +62,7 @@
         width: 100%;
     }
     nav ul{
-        flex-direction: column;
+        @include mixins.flex(column,center,center,auto);
         gap: 10px;
     }
     .home-links{
@@ -73,6 +70,26 @@
             flex-direction: column;
             gap: 10px;
         }
+    }
+    .beneficios{
+        .beneficios-grid{
+            @include mixins.grid(1fr,3fr,30px);
+            grid-template-areas:
+            "entrenamientos"
+            "profesionales"
+            "clases";
+        }
+    }
+    .objetivos{
+        .lista-objetivos{
+            @include mixins.flex(column,center,center,auto);
+            gap: 15px;
+        }
+    }
+    .cta{
+        @include mixins.flex(column,center,center,auto);
+        text-align: center;
+        padding:10px;
     }
     /* Clases*/
     .plan{
@@ -98,28 +115,88 @@
     }
     /*Servicios*/
     .servicios{
-        @include mixins.grid(100%,repeat(1fr,4),auto);
+        @include mixins.grid(100%,repeat(1fr,6),auto);
         grid-template-areas:
             "entrenamiento"
             "libregym"
             "masaje"
-            "nutricion";
+            "nutricion"
+            "evaluacion"
+            "motivacion";
+    }
+    .conocer-clases{
+        margin-top:auto;
     }
     /*Contacto*/
     .formulario-contacto{
         border:none
     }
+    /*faqs*/
+    .faqs-intro-content{
+        .faqs-img{
+            width: 90%;
+            max-width:400px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .faqs-intro-text{
+            padding: 0 10px;
+            width:90%;
+        }
+    }
+    .faqs-contacto{
+        text-align: center;
+    }
 }
 /* Tablets */
-@media (min-width: 769px)and (max-width: 1024px){
-    .collapse{
-            position:absolute;
-            top: 100%;     
-            left: 0;
-            width: 0;
-            background-color: white;
-            z-index: 9999;
+@media (min-width: 577px)and (max-width: 1024px){
+    header{
+        @include mixins.flex(row,center,center,auto);
+        .navbar {
+            width:100%;
+            position: relative;
+            background: transparent;
+            padding: 0.4rem 1rem;
         }
+
+        .container-fluid {
+            max-width: 100%;
+            @include mixins.flex(row,space-evenly,center,auto);
+        }
+
+        .navbar-toggler {
+            margin-left: auto;
+        }
+
+        .navbar-collapse {
+            position: absolute;
+            top: 126px; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            background-color: variables.$color-fondo;
+            border-radius: 8px;
+            padding: 0.6rem;
+            z-index: 1000;
+            box-shadow: 0 8px 24px variables.$color-secundario;
+        }
+
+        .navbar-collapse.collapse:not(.show) {
+            display: none;
+        }
+
+        .navbar-nav {
+            @include mixins.flex(column,center,center,auto);
+            gap: 0.5rem;
+            margin:10px;
+        }
+
+        .logo {
+            width: 100px;      
+            height: auto;     
+            max-width: none;   
+        }
+    }
     .introduccion{
         @include mixins.flex(column,center,center,wrap);
     }
@@ -135,12 +212,5 @@
     }
     .clase-contenido{
         font-size: 24px;
-    }
-}
-/* Small tablets and large phones */
-@media (min-width:577px) and (max-width: 768px){
-    .clases-incluidas{
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 }

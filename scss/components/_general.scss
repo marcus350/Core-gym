@@ -1,25 +1,33 @@
 @use "../utilities/mixins";
 @use "../utilities/variables" ;
+@use "../utilities/extends" ;
+
 header{
     font-size: 24px;
-    @include mixins.flex(row, center, center,auto);
     padding: 10px 20px;
-    .logo{
-    width: 169.2px;
-    height: auto;
-    }
     .navbar{
-        justify-self: flex-end;
-        ul{
-            li{
-                list-style-type: none;
-                @include mixins.flex(row, center, center,wrap);
-                gap: 10px 5px;
-                margin: 0 10px;
-                .boton{
-                    @include mixins.boton(variables.$color-secundario, variables.$color-texto, 16px, 10px 15px, 5px);
-                    width: auto;
-                    font-size: 24px;
+        .logo{
+            max-width: 120px;
+            height: auto;
+            border-radius: 5px;
+        }
+        width: 100%;
+        .container-fluid{
+            @include mixins.flex(row, space-between, center,auto);
+            .navbar-collapse{
+                @include mixins.flex(row, flex-end, center,auto);
+                .navbar-nav{
+                    .nav-item{
+                        list-style-type: none;
+                        @include mixins.flex(row, center, center,wrap);
+                        gap: 10px 5px;
+                        margin: 0 10px;
+                        .nav-link{
+                            @extend %boton;
+                            width: auto;
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }
@@ -47,13 +55,116 @@ header{
         nav{
             @include mixins.flex(row,center,center,wrap);
             .boton{
-                @include mixins.boton(variables.$color-secundario,variables.$color-texto,variables.$tamanio-texto,5px,5px);
+                @extend %boton;
                 margin:10px;
             }
         }
     }
 }
+.beneficios{
+    @include mixins.flex(column,space-around,center,auto);
+    margin-top: 30px;
+    .beneficios-grid{
+        @include mixins.grid(3,1,50px);
+        margin: 20px 0;
+        grid-template-areas: 
+            "entrenamientos profesionales clases";
+        .beneficio-img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        .beneficio-1{
+            max-width: 300px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            grid-area: entrenamientos;
+            border:3px solid variables.$color-secundario;
+        }
+        .beneficio-2{
+            max-width: 300px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            grid-area: profesionales;
+            border:3px solid variables.$color-secundario;
+        }
+        .beneficio-3{
+            max-width: 300px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            grid-area: clases;
+            border:3px solid variables.$color-secundario;
+        }
+    }
+}
 
+.objetivos{
+    @include mixins.flex(column,center,center,auto);
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    .lista-objetivos{
+        margin-top: 20px;
+        @include mixins.grid(2,3,20px);
+        grid-template-areas: 
+        "icono-salud saludable"
+        "icono-apoyo apoyo"
+        "icono-calidad calidad";
+        .item-objetivo-1{
+            @extend %item-lista;
+            @include mixins.flex(row, flex-start, center,auto);
+            margin: 10px 0;
+            grid-area: saludable;
+        }
+        .item-objetivo-2{
+            @extend %item-lista;
+            @include mixins.flex(row, flex-start, center,auto);
+            margin: 10px 0;
+            font-size: 18px;
+            grid-area: apoyo;
+        }
+        .item-objetivo-3{
+            @extend %item-lista;
+            @include mixins.flex(row, flex-start, center,auto);
+            margin: 10px 0;
+            font-size: 18px;
+            grid-area: calidad;
+        }
+        .icono-objetivo{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .salud{
+            grid-area:icono-salud;
+        }
+        .pulgar{
+            grid-area:icono-apoyo;
+        }
+        .calidad{
+            grid-area:icono-calidad;
+        }
+    }    
+}
+.cta{
+    @include mixins.flex(column,center,center,auto);
+    margin: 30px 0;
+    h2{
+        margin-bottom: 15px;
+    }
+    .contacto-img{
+        width:50px;
+        height:auto;
+    }
+    .boton{
+        @extend %boton;
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}
 footer{
     @include mixins.flex(row, center, center,auto);
     text-align: center;

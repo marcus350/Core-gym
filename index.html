@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Core Gym</title>
+    <title>Core Gym | Home</title>
+    <meta name="keywords" content="gimnasio, fitness, entrenamiento, clases de gym, salud, bienestar, Core Gym, membresías, personal trainer, ejercicios">
+    <meta name="description" content="Bienvenido a Core Gym, tu espacio para alcanzar tus objetivos de fitness con entrenamientos personalizados y clases dinámicas.">
+    <meta name="author" content="Marcos Ariel Argüello">
+    <link rel="icon" href="./assets/Logo_Core_Gym.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -20,19 +25,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link boton" aria-current="page" href="#">Home</a>
+                            <a class="nav-link boton" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link boton" href="./pages/servicios.html">Servicios</a>
+                            <a class="nav-link boton" href="./pages/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link boton" href="./pages/clases.html">Clases</a>
+                            <a class="nav-link boton" href="./pages/clases.html">Clases</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link boton" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link boton" href="./pages/contacto.html">Contacto</a>
                         </li>
-                        <li>
-                        <a class="nav-link boton" href="./pages/faqs.html">FAQS</a>
+                        <li class="nav-item">
+                            <a class="nav-link boton" href="./pages/faqs.html">FAQS</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +45,7 @@
         </nav>
     </header>
     <main>
-        <div class="main-header">
+        <div class="main-header" data-aos="fade-right">
             <h1><strong>CORE GYM</strong></h1>
             <p class="slogan">"Fuerza. Enfoque. Resultados"</p>
             <h2>Bienvenido a Core Gym</h2>
@@ -50,7 +55,7 @@
                 <p>El cambio no empieza mañana, empieza hoy.
                 En Core Gym te damos las herramientas, el espacio y la motivación que necesitás para alcanzar tus objetivos.
                 Entrenamientos personalizados, clases dinámicas y planes pensados para acompañarte en cada paso. Elegí tu camino. Nosotros te acompañamos.</p>
-                <img class="gym" src="./assets/Gimnasio.jpg" alt="">
+                <img class="gym" src="./assets/Gimnasio.jpg" alt="Personas entrenando en la cinta de correr en Core Gym">
             </div>
             <section class="home-links">
                 <nav>
@@ -63,12 +68,54 @@
                 </nav>
             </section>
         </article>
-        
+        <section class="beneficios">
+            <h2>¿Por qué elegir Core Gym?</h2>
+            <div class="beneficios-grid">
+                <article class="beneficio-1" data-aos="flip-right">
+                <h3>Entrenamientos personalizados</h3>
+                <p>Planes adaptados a tus objetivos y nivel.</p>
+                <img class="beneficio-img" src="./assets/ent_pers.png" alt="Entrenador y alumna en un entrenamiento personalizado">
+                </article>
+                <article class="beneficio-2" data-aos="flip-right">
+                <h3>Profesionales certificados</h3>
+                <p>Entrenadores que te acompañan en cada etapa.</p>
+                <img class="beneficio-img" src="./assets/prof_cert.png" alt="Entrenador profesional como ejemplo a seguir">
+                </article>
+                <article class="beneficio-3" data-aos="flip-right">
+                <h3>Clases dinámicas</h3>
+                <p>Yoga, boxeo, funcional, musculación y mucho más.</p>
+                <img class="beneficio-img" src="./assets/clase_dinamica.png" alt="Clases dinámicas en el gimnasio">
+                </article>
+            </div>
+        </section>
+        <section class="objetivos">
+            <h2>Nuestros Objetivos</h2>
+            <ul class="lista-objetivos">
+                <img class="icono-objetivo salud" src="./assets/estilo_de_vida_saludable.svg" alt="Icono de estilo de vida saludable">
+                <li class="item-objetivo-1">Fomentar un estilo de vida saludable y activo.</li>
+                <img class="icono-objetivo pulgar" src="./assets/pulgar_arriba.svg" alt="Icono de pulgar arriba">
+                <li class="item-objetivo-2">Brindar un ambiente motivador y de apoyo.</li>
+                <img class="icono-objetivo calidad" src="./assets/calidad.svg" alt="Icono de calidad">
+                <li class="item-objetivo-3">Ofrecer servicios de alta calidad adaptados a las necesidades de nuestros socios.</li>
+            </ul>
+        </section>
+        <section class="cta">
+            <h2>Empezá hoy tu cambio</h2>
+            <p>Contactanos y empezá a entrenar con nosotros.</p>
+            <img class="contacto-img" src="./assets/icono_contacto.svg" alt="Ícono de contacto">
+            <a class="boton" data-aos="zoom-in" href="./pages/contacto.html" >
+                Contactanos
+            </a>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Core Gym. Todos los derechos reservados.</p>
         <img class="footer-img" src="./assets/Logo_Core_Gym.svg" alt="">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

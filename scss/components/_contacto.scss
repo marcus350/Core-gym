@@ -1,5 +1,6 @@
 @use "../utilities/mixins";
 @use "../utilities/variables" ;
+@use "../utilities/extends" ;
 
 .formulario-contacto{
     @include mixins.flex(column,flex-start,flex-start,auto);
@@ -26,7 +27,7 @@
     }
     .boton-enviar{
         margin: 15px;
-        @include mixins.boton(variables.$color-secundario,variables.$color-texto,variables.$tamanio-texto,5px,5px);
+        @extend %boton;
     }
 }
 .otros-contactos{

@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Core Gym - servicios</title>
+    <title>Core Gym | Servicios</title>
+    <meta name="keywords" content="Servicios, gimnasio, entrenamiento personal, clases grupales, nutrición, bienestar, Core Gym, planes de entrenamiento, asesoramiento">
+    <meta name="description" content="Explorá los servicios que ofrecemos en Core Gym para ayudarte a alcanzar tus objetivos de fitness, desde entrenamiento personal hasta asesoramiento nutricional.">
+    <meta name="author" content="Marcos Ariel Argüello">
+    <link rel="icon" href="../assets/Logo_Core_Gym.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -31,7 +36,7 @@
                         <li class="nav-item">
                         <a class="nav-link boton" href="./contacto.html">Contacto</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                         <a class="nav-link boton" href="./faqs.html">FAQS</a>
                         </li>
                     </ul>
@@ -40,40 +45,58 @@
         </nav>
     </header>
     <main>
-        <div class="main-header">
+        <div class="main-header" data-aos="fade-right">
             <h1><strong>CORE GYM</strong></h1>
             <p class="slogan">"Fuerza. Enfoque. Resultados"</p>
             <h2>Nuestros Servicios</h2>
             <p>En Core Gym ofrecemos una variedad de servicios para ayudarte a alcanzar tus objetivos de fitness:</p>
         </div>
         <section class="servicios">
-            <div class="servicio-gym ent-per">
+            <div class="servicio-gym ent-per" data-aos="flip-right">
                 <h3>Entrenamiento Personalizado</h3>
                 <p>Sesiones de entrenamiento adaptadas a tus necesidades y objetivos específicos.</p>
-                <img class="service" src="../assets/entrenamiento_personalizado.jpg" alt="">
+                <img class="service" src="../assets/entrenamiento_personalizado.jpg" alt="Persona entrenando junto a su entrenador de forma intensiva y personalizada en Core Gym">
             </div>
-            <div class="servicio-gym free-gym">
+            <div class="servicio-gym free-gym" data-aos="flip-right">
                 <h3>Gym Acceso Libre</h3>
                 <p>Acceso completo a todas nuestras instalaciones durante tu horario preferido.</p>
-                <img class="service" src="../assets/gym_acceso_libre.jpg" alt="">
+                <img class="service" src="../assets/gym_acceso_libre.jpg" alt="Gimnasio libre y disponible para todos los socios de Core Gym">
             </div>
-            <div class="servicio-gym masaje">
+            <div class="servicio-gym masaje" data-aos="flip-right">
                 <h3>Servicios de Masaje</h3>
                 <p>Relájate y recupera tu energía con nuestros masajes profesionales.</p>
-                <img class="service" src="../assets/masaje.jpg" alt="">
+                <img class="service" src="../assets/masaje.jpg" alt="Personas recibiendo un excelente servicio de masajes">
             </div>
-            <div class="servicio-gym ase-nutri">
+            <div class="servicio-gym ase-nutri" data-aos="flip-right">
                 <h3>Asesoramiento Nutricional</h3>
                 <p>Planes de alimentación personalizados para complementar tu rutina de ejercicios.</p>
-                <img class="service" src="../assets/nutricion_asesoria.jpg" alt="">
+                <img class="service" src="../assets/nutricion_asesoria.jpg" alt="Planificación de alimentación saludable con frutas, verduras y material nutricional sobre una mesa">
+            </div>
+            <div class="servicio-gym evaluacion" data-aos="flip-right">
+                <h3>Evaluación Física Inicial y Seguimiento</h3>
+                <p>Analizamos tu estado inicial, medimos avances y ajustamos tu plan de entrenamiento.</p>
+                <img class="service" src="../assets/evaluacion_corporal.png" alt="Persona parada en una balanza en una evaluación corporal en Core Gym">
+            </div>
+            <div class="servicio-gym motivacion" data-aos="flip-right">
+                <h3>Acompañamiento y Motivación Continua</h3>
+                <p>Nuestros entrenadores te guían, corrigen tu técnica y te ayudan a mantener la constancia.</p>
+                <img class="service" src="../assets/motivacion_acompaniamiento.png" alt="Entrenador corrigiendo la postura de un alumno mientras hace ejercicio en Core Gym">
             </div>
         </section>
-        
+        <section class="conocer-clases">
+            <h2>¡Conocé nuestras clases disponibles!</h2>
+            <p>Si te interesaron nuestros servicios, haz click en el siguiente botón para conocer las clases y horarios en las que se dan en nuestro gimnasio.</p>
+            <a class="boton" data-aos="zoom-in" href="./clases.html">Nuestras clases</a>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Core Gym. Todos los derechos reservados.</p>
         <img class="footer-img" src="../assets/Logo_Core_Gym.svg" alt="">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,10 +1,5 @@
 @use "./variables" ;
 
-@mixin titulo($tamanio,$color){
-    font-size: $tamanio;
-    color:$color;
-}
-
 @mixin flex($direction,$justify,$align,$wrap){
     display: flex;
     flex-direction: $direction;
@@ -18,19 +13,4 @@
     grid-template-columns: $columns;
     grid-template-rows: $rows;
     gap: $gap;
-}
-
-@mixin boton($bg-color, $text-color, $font-size, $padding, $border-radius){
-    background-color: $bg-color;
-    color: $text-color;
-    font-size: $font-size;
-    padding: $padding;
-    border-radius: $border-radius;
-    text-decoration: none;
-    &:hover{
-        cursor: pointer;
-        background-color: variables.$color-hover;
-        color: variables.$color-fondo;
-        text-decoration: underline;
-    }
 }

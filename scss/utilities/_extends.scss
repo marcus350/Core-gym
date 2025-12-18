@@ -1,0 +1,62 @@
+@use "./variables";
+
+%boton{
+    background-color: variables.$color-secundario;
+    color: variables.$color-texto;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+        background-color: variables.$color-hover;
+        color: variables.$color-fondo;
+        text-decoration: underline;
+    }
+}
+
+%encabezado-principal{
+    font-size: variables.$tamanio-titulo;
+    color: variables.$color-secundario;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+%subtitulo{
+    font-size: variables.$tamanio-subtitulo;
+    color: variables.$color-secundario;
+    font-weight: semi-bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+%apartado{
+    font-size: variables.$taminio-apartado;
+    color: variables.$color-secundario;
+    font-weight: semi-bold;
+    margin-bottom: 10px;
+}
+%item-lista{
+    font-size: variables.$tamanio-texto;
+    color: variables.$color-texto;
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+%tarjeta-servicios{
+    border: 2px solid variables.$color-secundario;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 350px;
+    text-align: left;
+    margin: 20px;
+}
+%tarjeta-clase{
+    border: 2px solid variables.$color-secundario;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    margin: 20px;
+}
