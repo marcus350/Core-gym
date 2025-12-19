@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.conocer-clases .boton, .faqs-contacto .boton, .formulario-contacto .boton-enviar, .plan .boton-plan, header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link, .introduccion .home-links nav .boton, .cta .boton {
+.conocer-clases .boton, .faqs-contacto .boton, .formulario-contacto .boton-enviar, .plan .boton-plan, header .navbar-expand-xl .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link, .introduccion .home-links nav .boton, .cta .boton {
   background-color: #00adb5;
   color: #1c1c1c;
   font-size: 16px;
@@ -12,7 +12,7 @@
   border-radius: 5px;
   text-decoration: none;
 }
-.conocer-clases .boton:hover, .faqs-contacto .boton:hover, .formulario-contacto .boton-enviar:hover, .plan .boton-plan:hover, header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .introduccion .home-links nav .boton:hover, .cta .boton:hover {
+.conocer-clases .boton:hover, .faqs-contacto .boton:hover, .formulario-contacto .boton-enviar:hover, .plan .boton-plan:hover, header .navbar-expand-xl .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .introduccion .home-links nav .boton:hover, .cta .boton:hover {
   cursor: pointer;
   background-color: #008f95;
   color: #f5f5f5;
@@ -81,29 +81,29 @@ header {
   font-size: 24px;
   padding: 10px 20px;
 }
-header .navbar .logo {
+header .navbar-expand-xl .logo {
   max-width: 120px;
   height: auto;
   border-radius: 5px;
 }
-header .navbar {
+header .navbar-expand-xl {
   width: 100%;
 }
-header .navbar .container-fluid {
+header .navbar-expand-xl .container-fluid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: auto;
 }
-header .navbar .container-fluid .navbar-collapse {
+header .navbar-expand-xl .container-fluid .navbar-collapse {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: auto;
 }
-header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+header .navbar-expand-xl .container-fluid .navbar-collapse .navbar-nav .nav-item {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -113,7 +113,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
   gap: 10px 5px;
   margin: 0 10px;
 }
-header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+header .navbar-expand-xl .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
   width: auto;
   font-size: 24px;
 }
@@ -520,7 +520,7 @@ footer .footer-img {
   text-align: center;
 }
 /* Mobile */
-@media (max-width: 576px) {
+@media (max-width: 749px) {
   header {
     display: flex;
     flex-direction: row;
@@ -528,13 +528,13 @@ footer .footer-img {
     align-items: center;
     flex-wrap: auto;
   }
-  header .navbar {
+  header .navbar-expand-xl {
     width: 100%;
     position: relative;
     background: transparent;
     padding: 0.4rem 1rem;
   }
-  header .container-fluid {
+  header .navbar-expand-xl .container-fluid {
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -542,10 +542,15 @@ footer .footer-img {
     align-items: center;
     flex-wrap: auto;
   }
-  header .navbar-toggler {
+  header .navbar-expand-xl .container-fluid .logo {
+    width: 100px;
+    height: auto;
+    max-width: none;
+  }
+  header .navbar-expand-xl .container-fluid .navbar-toggler {
     margin-left: auto;
   }
-  header .navbar-collapse {
+  header .navbar-expand-xl .container-fluid .navbar-collapse {
     position: absolute;
     top: 126px;
     left: 50%;
@@ -557,10 +562,7 @@ footer .footer-img {
     z-index: 1000;
     box-shadow: 0 8px 24px #00adb5;
   }
-  header .navbar-collapse.collapse:not(.show) {
-    display: none;
-  }
-  header .navbar-nav {
+  header .navbar-expand-xl .container-fluid .navbar-collapse .navbar-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -569,11 +571,13 @@ footer .footer-img {
     gap: 0.5rem;
     margin: 10px;
   }
-  header .logo {
-    width: 100px;
-    height: auto;
-    max-width: none;
+  header .navbar-expand-xl .container-fluid .navbar-collapse.collapse:not(.show) {
+    display: none;
   }
+  .main-header {
+    margin: 20px;
+  }
+  /* index*/
   .introduccion {
     display: flex;
     flex-direction: column;
@@ -589,7 +593,6 @@ footer .footer-img {
     flex-wrap: wrap;
     max-width: 100%;
   }
-  /* index*/
   .gym {
     width: 100%;
   }
@@ -657,7 +660,7 @@ footer .footer-img {
     grid-template-areas: "entrenamiento" "libregym" "masaje" "nutricion" "evaluacion" "motivacion";
   }
   .conocer-clases {
-    margin-top: auto;
+    margin: 20px;
   }
   /*Contacto*/
   .formulario-contacto {
@@ -679,7 +682,7 @@ footer .footer-img {
   }
 }
 /* Tablets */
-@media (min-width: 577px) and (max-width: 1024px) {
+@media (min-width: 750px) and (max-width: 1199px) {
   header {
     display: flex;
     flex-direction: row;
@@ -687,13 +690,13 @@ footer .footer-img {
     align-items: center;
     flex-wrap: auto;
   }
-  header .navbar {
+  header .navbar-expand-xl {
     width: 100%;
     position: relative;
     background: transparent;
     padding: 0.4rem 1rem;
   }
-  header .container-fluid {
+  header .navbar-expand-xl .container-fluid {
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -701,37 +704,36 @@ footer .footer-img {
     align-items: center;
     flex-wrap: auto;
   }
-  header .navbar-toggler {
+  header .navbar-expand-xl .container-fluid .logo {
+    width: 100px;
+    height: auto;
+  }
+  header .navbar-expand-xl .container-fluid .navbar-toggler {
     margin-left: auto;
   }
-  header .navbar-collapse {
+  header .navbar-expand-xl .container-fluid .navbar-collapse {
     position: absolute;
     top: 126px;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    width: 750px;
     background-color: #f5f5f5;
     border-radius: 8px;
     padding: 0.6rem;
     z-index: 1000;
     box-shadow: 0 8px 24px #00adb5;
   }
-  header .navbar-collapse.collapse:not(.show) {
-    display: none;
-  }
-  header .navbar-nav {
+  header .navbar-expand-xl .container-fluid .navbar-collapse .navbar-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: auto;
-    gap: 0.5rem;
+    gap: 10px;
     margin: 10px;
   }
-  header .logo {
-    width: 100px;
-    height: auto;
-    max-width: none;
+  header .navbar-expand-xl .container-fluid .navbar-collapse.collapse:not(.show) {
+    display: none;
   }
   .introduccion {
     display: flex;
@@ -740,15 +742,34 @@ footer .footer-img {
     align-items: center;
     flex-wrap: wrap;
   }
+  /* Clases*/
+  .membresias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   .clases-incluidas {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: 15px;
     grid-template-areas: "yoga pilates" "spinning EF" "zumba boxeo";
     gap: 15px;
     font-size: 24px;
   }
   .clase-contenido {
     font-size: 24px;
+  }
+  /*Servicios*/
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    grid-template-areas: "entrenamiento libregym" "masaje nutricion" "evaluacion motivacion";
   }
 }
 
